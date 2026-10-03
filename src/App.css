@@ -1,0 +1,306 @@
+/* App layout */
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  text-align: left;
+}
+
+.app-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #a6adc8;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #181825;
+  border: 1px solid #313244;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #cba6f7;
+}
+
+.section {
+  margin-top: 1.5rem;
+}
+
+.section h3 {
+  font-size: 1rem;
+  color: #89dceb;
+  margin-bottom: 0.75rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.88rem;
+  color: #cdd6f4;
+}
+
+input[type="number"],
+select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #45475a;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="number"]:focus,
+select:focus {
+  outline: 2px solid #cba6f7;
+  border-color: transparent;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.radio-group label {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.function-inputs {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.function-inputs > label {
+  gap: 0.4rem;
+}
+
+.compute-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.6rem;
+  background: #cba6f7;
+  color: #1e1e2e;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.compute-btn:hover {
+  background: #b4a0e5;
+}
+
+.error-box {
+  background: #3b1f24;
+  border: 1px solid #f38ba8;
+  color: #f38ba8;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.results-card h2 {
+  color: #a6e3a1;
+}
+
+.k-display {
+  font-size: 1rem;
+  color: #cdd6f4;
+  margin-bottom: 0.75rem;
+}
+
+.formula-box {
+  background: #11111b;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+  color: #cdd6f4;
+}
+
+.formula-values {
+  color: #a6adc8;
+  font-size: 0.95rem;
+}
+
+.custom-expr-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-mode-toggle {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.toggle-label {
+  color: #a6adc8;
+  font-size: 0.88rem;
+}
+
+.expr-input {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #45475a;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.expr-input:focus {
+  outline: 2px solid #cba6f7;
+  border-color: transparent;
+}
+
+.expr-error {
+  background: #3b1f24;
+  border: 1px solid #f38ba8;
+  color: #f38ba8;
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.expr-hint {
+  color: #585b70;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.expr-hint code {
+  background: #181825;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  color: #cba6f7;
+}
+
+.formula-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.formula-label {
+  color: #a6adc8;
+  font-size: 0.85rem;
+}
+
+.formula-inline {
+  color: #a6adc8;
+  font-size: 0.88rem;
+}
+
+.target-result {
+  background: #11111b;
+  border: 1px solid #313244;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #cdd6f4;
+}
+
+.target-result p {
+  margin: 0;
+}
+
+.no-crossing {
+  color: #f38ba8;
+}
+
+.numeric-note {
+  color: #a6adc8;
+  font-size: 0.85rem;
+}
+
+/* ── Loading spinners ─────────────────────────────────────────────── */
+
+@keyframes nlc-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Inline button spinner */
+.btn-spinner {
+  display: inline-block;
+  width: 0.85em;
+  height: 0.85em;
+  border: 2px solid rgba(30, 30, 46, 0.35);
+  border-top-color: #1e1e2e;
+  border-radius: 50%;
+  animation: nlc-spin 0.65s linear infinite;
+  vertical-align: middle;
+  margin-left: 0.4em;
+  flex-shrink: 0;
+}
+
+.compute-btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+/* Plot-level loading overlay */
+.plot-wrapper {
+  position: relative;
+  min-height: 420px;
+}
+
+.plot-loading-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(24, 24, 37, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.plot-spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid rgba(203, 166, 247, 0.25);
+  border-top-color: #cba6f7;
+  border-radius: 50%;
+  animation: nlc-spin 0.75s linear infinite;
+  flex-shrink: 0;
+}
+
+.plot-loading-text {
+  color: #cdd6f4;
+  font-size: 1rem;
+}
+
